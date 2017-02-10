@@ -12,3 +12,9 @@
 4. ```npm install```
 6. ```run gulp``` 
 
+
+name: Aleksander Lizunov
+Tasks added: gulp-imagemin
+
+
+
