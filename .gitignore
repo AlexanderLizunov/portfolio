@@ -25,6 +25,8 @@
 Thumbs.db
 
 # Folders to ignore
+key*
+
 .CVS
 .git
 .hg

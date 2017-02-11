@@ -16,5 +16,6 @@
 name: Aleksander Lizunov
 Tasks added: gulp-imagemin
 
-
+Подключил плагин spritesmith для создания спрайтов (в тасках и далее именован  spritepng)
+Подключил плагин Gulp-copy для копирования шрифтов (далее в тасках copyfonts), изображения перемещаются плагином сборки copy:image.
 
