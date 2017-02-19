@@ -1,7 +1,48 @@
 extends ../_template
 
+
 block variables
   - var title = 'Home page'
 
+
 block content
-  include ../common/_greating
+    link(rel='stylesheet' href='/assets/css/app.css')
+    body
+        .wraper
+            .main__bg
+                img.main__bg-image(src="/assets/img/night-login.png")
+            .content
+                button.authorisation-button Авторизоваться
+                .hero__container
+                    .hero__container-bg
+                        .C-hero__block
+                            .hero__block-pic
+                                img.hero__block-pic-screen(src="/assets/img/photofull.png")
+                            .hero__block-name Александр Лизунов
+                            .hero__block-spec Личный сайт веб-разработчика
+                        ul.C-socials
+                            li.socials__item
+                                a.socials__link(href="#")
+                                    svg.icon(class="socials-link-ico")
+                                        use(xlink:href="/assets/img/sprite.svg#vk")
+                            li.socials__item
+                                a.socials__link(href="#")
+                                    svg.icon(class="socials-link-ico")
+                                        use(xlink:href="/assets/img/sprite.svg#github")
+                            li.socials__item
+                                a.socials__link(href="#")
+                                    svg.icon(class="socials-link-ico")
+                                        use(xlink:href="/assets/img/sprite.svg#in")
+                        ul.hero__container-nav
+                            li.hero__container-nav-item
+                                a.hero__container-nav-link.work(href="/works.html") Мои работы
+                            li.hero__container-nav-item
+                                a.hero__container-nav-link.about(href="/about.html") Обо мне
+                            li.hero__container-nav-item
+                                a.hero__container-nav-link.blog(href="/blog.html") Блог
+                .made-by © Владимир Астахов | создано с любовью в LoftSchool | 2016
+
+
+
+
+

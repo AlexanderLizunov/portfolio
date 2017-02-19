@@ -2,4 +2,222 @@ body {
   margin: 0;
 }
 
+.clearfix {
+
+  content: ".";
+
+  display: block;
+
+  height: 0;
+
+  clear: both;
+
+  visibility: hidden;
+
+}
+
 @import 'common/greating';
+
+*{
+  box-sizing: border-box;
+  list-style-type: none;
+}
+.wraper {
+
+  overflow: hidden;
+  height:100vh;
+
+}
+
+.main__bg {
+  position: relative;
+
+  height:100%;
+  min-height:100vh;
+}
+
+.main__bg-image {
+  height:100%;
+
+
+  width:100%;
+  min-height: 100vh;
+  position: absolute;
+
+
+
+
+}
+
+.content{
+  position:static;
+  width: 100%;
+
+}
+
+
+.authorisation-button {
+  text-decoration: none;
+  position: absolute;
+  top:24px;
+  right:100px;
+  background: transparent;
+  color:white;
+  cursor:pointer;
+  padding: 15px 25px;
+  border:1px solid white;
+}
+
+.hero__container {
+
+  text-align: center;
+  position: absolute;
+  top:31%;
+
+  width:100%;
+}
+.hero__container-bg {
+padding-top: 40px;
+  width:380px;
+  margin: 0 auto;
+  background-color: rgba(28, 31, 41, 0.5);
+}
+
+C-hero__block{
+  background-color: rgba(28, 31, 41, 0.5);
+}
+.hero__block-pic {
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  overflow: hidden;
+  position: relative;
+  margin:0 auto;
+}
+
+.hero__block-pic-screen {
+  height: 175px;
+  position: absolute;
+  top: -6px;
+  left: -50px;
+}
+
+.hero__block-name {
+  margin-top:15px;
+  color: white;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.hero__block-spec{
+opacity: 0.8;
+color: white;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 40px;}
+
+
+.C-socials {
+  list-style-type: none;
+  display: inline-block;
+  text-align:center;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom:40px;
+  :last-child{
+    margin-right: 0px;
+  }
+}
+
+.socials__item {
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+.socials__link {
+  cursor: pointer;
+  height:25px;
+}
+
+.socials-link-ico{
+  display: inline-block;
+  width: 31px;
+  height:22px;
+  fill-opacity: .7;
+
+  fill:#004cd1;
+
+  &:hover{
+
+    fill-opacity: 1;
+  }
+}
+
+.hero__container-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+
+}
+
+.hero__container-nav-item {
+
+  display: inline-block;
+
+  text-align: center;
+}
+
+.hero__container-nav-link {
+  text-decoration: none;
+  padding-top: 4px;
+  cursor:pointer;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-right:0px;
+  display: block;
+  opacity: 0.85;
+  background-color: #004cd1;
+  height:45px;
+width:100%;
+  &:hover {
+    background-color: #043ea3;
+  }
+}
+
+.work{
+  width:155px;
+}
+
+.about{
+  width:125px;
+  border-left:1px solid rgba(222, 227, 231, 0.5);
+  border-right:1px solid rgba(222, 227, 231, 0.5);
+}
+
+.blog{
+  width:100px;
+}
+
+
+.made-by{
+  width:100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 101px;
+  bottom:0%;
+}
+

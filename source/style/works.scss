@@ -1,0 +1,454 @@
+*{
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1;
+}
+p{
+  margin:0;
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #faf8f0;
+}
+
+
+.C-socials {
+  width:180px;
+  float:left;
+  list-style-type: none;
+  display: flex;
+  text-align:center;
+  padding-left: 0px;
+  margin-top: 30px;
+
+  margin-bottom:40px;
+  :last-child{
+    margin-right: 0px;
+  }
+}
+
+.socials__item {
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+.socials__link {
+  cursor: pointer;
+  height:25px;
+}
+
+.socials-link-ico{
+  display: inline-block;
+  width: 31px;
+  height:22px;
+  fill-opacity: .7;
+
+  fill:white;
+
+  &:hover{
+
+    fill:#004cd1;
+  }
+}
+
+.wraper{
+  min-width:1800px;
+  width:100%;
+  position:relative;
+  display:block;
+  overflow: hidden;
+  height:auto;
+}
+
+.header-cover {
+  padding:0 30px;
+  display: flex;
+  width:100%;
+  position: absolute;
+  top:0px;
+  justify-content:space-between;
+
+
+}
+
+.wraper__bg{
+  min-width:1800px;
+  height:780px;
+
+}
+
+.wraper__bg-image{
+
+  min-width: 100%;
+  height: 1000px;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.header__menubtn{
+  border:none;
+  background: transparent;
+  cursor:pointer;
+}
+
+.helper{
+  width:100%;
+  height:0px;
+}
+
+.hamburger {
+  width: 45px;
+  height:35px;
+}
+
+.C-hero__block{
+  position:absolute;
+  display:block;
+
+  width:400px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top:153px;
+
+}
+.hero__block-pic {
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  overflow: hidden;
+  position: relative;
+  margin:0 auto;
+}
+
+.hero__block-pic-screen {
+  height: 175px;
+  position: absolute;
+  top: -6px;
+  left: -50px;
+}
+
+.hero__block-name {
+  margin-top:15px;
+  color: white;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.hero__block-spec{
+  opacity: 0.8;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;}
+
+.header__stars{
+  left: 50%;
+  transform: translateX(-50%);
+  top:118px;
+  position:absolute;
+  opacity: 0.07;
+  width:460px;
+  height:275px;
+  stroke:white;
+  fill:none;
+}
+
+.box {
+  width:100%;
+  position: absolute;
+  bottom: 140px;
+  margin: 0px auto;
+}
+
+.box2{
+  height: 142px;
+  background-color: rgba(13, 17, 32, .85);
+  position: absolute;
+  bottom:0;
+  width:100%
+}
+.traingle .left{
+
+  fill:rgba(13, 17, 32, .85);
+}
+.traingle .right{
+  fill: rgba(13, 17, 32, .85);
+}
+
+.content__stars-ico{
+  position:absolute;
+  fill:none;
+  width: 262px;
+  height: 171px;
+  opacity:0.15;
+  stroke: white;
+  transform: rotate(191deg);
+
+  display: block;
+  bottom: 2px;
+  left: 42%;
+
+
+}
+
+.header-title__block{
+  position: absolute;
+  bottom: 65px;
+  width:100%;
+}
+h1{
+
+margin:0;
+  margin-top:70px;
+  display: block;
+  text-align: center;
+
+  color: white;
+  font-family: SansusWebissimo;
+  font-size: 63px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+
+//-------------BOUT ME BLOCK------------------
+.about-me__wraper{
+  height:1357px;
+
+
+}
+
+.wraper__about-me-image{
+  height:100%;
+  width:100%;
+}
+
+.container__about-me{
+  width:1800px;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.rewievs{
+  margin:0 auto;
+  width: 820px;
+  display:flex;
+  margin-bottom:70px;
+
+
+}
+
+.rewievs_from{
+  padding-left:20px;
+width:50%
+
+}
+
+.rewiev-image{
+  display:block;
+height:80px;
+  margin:50px  auto;
+
+
+}
+
+.rewievs-text{
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  margin-bottom: 15px;
+
+}
+
+.rewievs-name{
+  text-align: center;
+  color: white;
+
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-style: italic;
+
+}
+
+.rewievs-position{
+  text-align: center;
+  color: white;
+
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  margin-bottom: 20px;
+
+  font-style: italic;
+
+}
+
+.contact-me__block{
+  width:380px;
+  margin:0 auto;
+padding: 45px 20px 0 20px;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+}
+
+.contact-me__title{
+  position: relative;
+  color: white;
+  font-family: SansusWebissimo;
+  font-size: 35px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
+  &:after{
+    content: "";
+    height: 3px;
+    width:90px;
+    opacity: 0.5;
+    background-color: #f2f0e8;
+    position: absolute;
+    bottom:-25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
+.contact-form_field {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  height: 30px;
+  border: none;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 99px;
+  &:focus {
+    outline: none;
+
+  }
+}
+
+.contacts-textarea{
+  height:130px;
+  resize: none;
+  overflow: hidden;
+
+  padding-top:0px;
+  line-height: 32px;
+}
+
+
+.footer-bg{
+  width:100%;
+  min-width: 1800px;
+  background-color: rgba(28, 31, 41,0.85);
+
+  position: absolute;
+  bottom: 0;
+
+}
+.footer-container{
+  display: flex;
+  width:1800px;
+  margin: 0 auto;
+  padding-bottom:20px;
+
+}
+
+.footer__block{
+  width:33.3333%;
+  padding-left:30px;
+  padding-top:30px;
+
+
+}
+
+.footer-text{
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 0.85;
+}
+
+.footer__block-central{
+  border-right: 1px solid rgba(255, 255, 255, 0.85);
+  border-left: 1px solid rgba(255, 255, 255, 0.85);
+  padding:0 28px;
+  margin-top: 30px;
+  margin-bottom:10px;
+}
+
+.footer_block-nav{
+  margin-top:0px;
+  display: flex;
+  padding-left:0px;
+  justify-content: space-between;
+
+}
+
+.nav-item{
+  list-style:none;
+  text-decoration: none;
+
+
+}
+.nav-link{
+
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+}
+
+.footer-socials{
+  margin-bottom:0px;
+  margin-top:0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.copy-rights{
+  text-align: center ;
+  width:100%;
+  opacity: 0.85;
+  background-color: #083c96;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+
+  padding-top:10px;
+  padding-bottom:15px;
+  height:38px;
+}
