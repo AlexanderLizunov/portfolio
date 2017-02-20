@@ -4,6 +4,7 @@ block variables
     - var title = 'Обо мне'
 
 block content
+    link(rel='stylesheet' href='/assets/css/fonts.css')
     link(rel='stylesheet' href='/assets/css/works.css')
     body
         .wraper
@@ -33,19 +34,57 @@ block content
                     img.hero__block-pic-screen(src="/assets/img/photofull.png")
                 .hero__block-name Александр Лизунов
                 .hero__block-spec Личный сайт веб-разработчика
-            .box
-                svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
-                    polygon(class = "left" points="0,0   0,86   500.8,86   500.8,75.5")
-                    polygon(class = "right" points="1000,0   1000,86   500,86   500,75.5")
-            .box2
+            .header-triangle_block
+                svg.header-triangle_image(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 100 100', preserveaspectratio='none')
+                    polygon(fill='#0d1120' fill-opacity=".85", points='50,50 100,0 100,100 0,100, 0,0')
             .header-title__block
                 h1 МОИ РАБОТЫ
-            svg.icon(class="content__stars-ico")
+            svg.icon(class="header__stars-ico")
                 use(xlink:href="/assets/img/sprite.svg#stars2")
+            button.arrow-down
+                svg.icon(class="socials-link-ico arrow-down_btn ")
+                    use(xlink:href="/assets/img/sprite.svg#arrow_down")
 
 
-        .wraper
-            .block-slider
+
+
+
+        .wraper.slider_wraper
+            .slider-comment
+                .slider-comment_title
+                    p Сайт школы онлайн
+                    p образования
+                p.site-link
+                    a.site-link_topick(href="#") HTML
+                    a.site-link_topick(href="#") , CSS
+                    a.site-link_topick(href="#") , Javascript
+                a.visit-site(href="#") Посмотреть сайт
+                    svg.icon(class="site-link-ico")
+                        use(xlink:href="/assets/img/sprite.svg#link")
+
+
+
+
+
+
+            .slider-block
+                .slider-main
+                    img.slider-main_image(src="/assets/img/main-slide.png")
+
+                .slider-small
+                    .slider-down
+                        img.slider-down_img(src="/assets/img/joga.png")
+                        button.slider-button
+                            svg.icon(class="slider-button_down-ico")
+                                use(xlink:href="/assets/img/sprite.svg#arrow_down")
+
+
+                    .slider-up
+                        img.slider-up__image(src="/assets/img/trialog.png")
+                        button.slider-button
+                            svg.icon(class="slider-button_up-ico")
+                                use(xlink:href="/assets/img/sprite.svg#arrow_down")
+
 
 
 
@@ -79,6 +118,9 @@ block content
                             input.contact-form_field(type="text" name="name" placeholder="Ваше имя")
                             input.contact-form_field(type="text" name="e-mail" placeholder="Ваш email")
                             textarea.contact-form_field.contacts-textarea( name="comment" cols="40" placeholder="Ваше сообщение" rows="6")
+                        .form-buttons_block
+                            button.form-button Отправить
+                            button.form-button Очистить
         footer.footer-bg
             .footer-container
                 .footer__block

@@ -4,6 +4,7 @@ block variables
     - var title = 'Обо мне'
 
 block content
+    link(rel='stylesheet' href='/assets/css/fonts.css')
     link(rel='stylesheet' href='/assets/css/about.css')
     body
         .wraper
@@ -37,6 +38,9 @@ block content
                 svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
                     polygon(class = "left" points="0,0   0,86   500.8,86   500.8,75.5")
                     polygon(class = "right" points="1000,0   1000,86   500,86   500,75.5")
+            button.arrow-down
+                svg.icon(class="socials-link-ico arrow-down_btn ")
+                    use(xlink:href="/assets/img/sprite.svg#arrow_down")
         .wraper.content_wraper
             .about.left
                 .about-content__left
@@ -127,7 +131,7 @@ block content
                                 .about-content__right-directions-text Bower
         .wraper.wraper-last
             .map-container
-                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.5354030695694!2d35.06629044062455!3d47.887321670988285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc643cb387c401%3A0xe7d6668be3ddbaae!2z0KLQvtCy0LDRgNC40YHRjNC60LAg0LLRg9C70LjRhtGPLCA1Niwg0JfQsNC_0L7RgNGW0LbQttGPLCDQl9Cw0L_QvtGA0ZbQt9GM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1487447838101" width="800" height="600" frameborder="0" style="border:0" allowfullscreen)
+                img(src="/assets/img/map.png")
             .city-map__contacts-cover
                 h2.city-map__contacts-title.about-content__left-details-who КОНТАКТЫ
                 .city-map__contacts-block
