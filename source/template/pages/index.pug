@@ -2,48 +2,138 @@ extends ../_template
 
 
 block variables
-  - var title = 'Home page'
+  - var title = 'CV'
 
 
 block content
-    link(rel='stylesheet' href='/assets/css/fonts.css')
+
     link(rel='stylesheet' href='/assets/css/app.css')
     body
-        .wraper
-            .main__bg
-                img.main__bg-image(src="/assets/img/night-login.png")
-            .content
-                button.authorisation-button Авторизоваться
-                .hero__container
-                    .hero__container-bg
-                        .C-hero__block
-                            .hero__block-pic
-                                img.hero__block-pic-screen(src="/assets/img/photofull.png")
-                            .hero__block-name Александр Лизунов
-                            .hero__block-spec Личный сайт веб-разработчика
-                        ul.C-socials
-                            li.socials__item
-                                a.socials__link(href="#")
-                                    svg.icon(class="socials-link-ico")
-                                        use(xlink:href="/assets/img/sprite.svg#vk")
-                            li.socials__item
-                                a.socials__link(href="#")
-                                    svg.icon(class="socials-link-ico")
-                                        use(xlink:href="/assets/img/sprite.svg#github")
-                            li.socials__item
-                                a.socials__link(href="#")
-                                    svg.icon(class="socials-link-ico")
-                                        use(xlink:href="/assets/img/sprite.svg#in")
-                        ul.hero__container-nav
-                            li.hero__container-nav-item
-                                a.hero__container-nav-link.work(href="/works.html") Мои работы
-                            li.hero__container-nav-item
-                                a.hero__container-nav-link.about(href="/about.html") Обо мне
-                            li.hero__container-nav-item
-                                a.hero__container-nav-link.blog(href="/blog.html") Блог
-                .made-by © Владимир Астахов | создано с любовью в LoftSchool | 2016
+        .menu-wraper
+            .menu-container
+                .baner
+                    img(src='/assets/img/logo.png')
+
+                ul.header-menu
+                    li.header-menu__item.header-menu__item-active
+                        a(href="#").header-menu__item-link Home
+                    li.header-menu__item
+                        a(href="#").header-menu__item-link about me
+                    li.header-menu__item
+                        a(href="#").header-menu__item-link  skills
+                    li.header-menu__item
+                        a(href="#").header-menu__item-link best works
+                    li.header-menu__item
+                        a(href="#").header-menu__item-link portfolio
+                    li.header-menu__item
+                        a(href="#").header-menu__item-link contacts
+                button.header__menubtn
+                    .hamburger
+        .desk-wraper
+            .desk-block
+                img.desk-bg_image(src='/assets/img/RT7CEKDRRK.jpg')
+                .desk-content_block
+                    h1.desk-block_title Lorem ipsum dolor sit amet
+                    p.desk-block_text lorem ipsum dolor sit amet
+                    p.desk-block_text sit amet dolor lorem
+                button.scroll-down
+        .hero
+            .hero-block
+                p.hero-block_title a little about
+                    span me
+                p.hero-block_text Lorem ipsum dolor sit ametr adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi usum dolor met, consectedipisicinim veniam, quis nostrud exercitation ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor i
+                img.hero-block_image-pic(src='/assets/img/photo.png')
+                .hero-block-buttons
+                    a(href='#') see my works
 
 
+                    a(href='#') contact me
+
+        .skills-wraper
+
+            .skills-container.skills-left
+                .technologies-block.technologies-block-first
+                    .technologies-block-title technologies
+                    .technologies-block-item html5
+                        .skill1
+                        .technologies-item-marker 80%
+                    .technologies-block-item html5
+                        .skill2
+                        .technologies-item-marker 80%
+                .technologies-block.languages-block
+                    .technologies-block-title Languages
+                    .languages-item-cover
+                        .languages-block-item English
+                            span : fluent
+                        .languages-block-quality
+                            img(src='/assets/img/stars.png')
+                    .languages-item-cover
+                        .languages-block-item English
+                            span : fluent
+                        .languages-block-quality
+                            img(src='/assets/img/stars.png')
+                    .languages-item-cover
+                        .languages-block-item English
+                            span : fluent
+                        .languages-block-quality
+                            img(src='/assets/img/stars.png')
+
+                .technologies-block.education-block
+                    .education-item-cover
+                        .technologies-block-title Education
+                        img.education-item-image(src='/assets/img/no-image.png')
+                        p.education-item-title Sed ut perspiciatis
+                        p.education-item-date 2010-2014
+                        p.education-item-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.
+                    .education-item-cover
+                        img.education-item-image.education-image-right(src='/assets/img/no-image.png')
+                        p.education-item-title Sed ut perspiciatis
+                        p.education-item-date 2010-2014
+                        p.education-item-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.
+
+            .skills-container.skills-right
+                .technologies-block.skills-block
+                    .technologies-block-title.skills-title-right skills
+                    .technologies-block-item html5
+                        .skill3
+                        .technologies-item-marker.right-block-marker 80%
+                    .technologies-block-item html5
+                        .skill4
+                        .technologies-item-marker.right-block-marker 80%
+
+                .technologies-block.education-block
+                    .education-item-cover
+                        .technologies-block-title Education
+                        img.education-item-image(src='/assets/img/no-image.png')
+                        p.education-item-title Sed ut perspiciatis
+                        p.education-item-date 2010-2014
+                        p.education-item-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.
+                    .education-item-cover
+                        img.education-item-image.education-image-right(src='/assets/img/no-image.png')
+                        p.education-item-title Sed ut perspiciatis
+                        p.education-item-date 2010-2014
+                        p.education-item-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.
+
+            .skills-title skills and technologies
+
+        .activity-wraper
+            .activity-container
+                a.activity-item(href='#')
+                    img.activity-ico(src='/assets/img/male.png')
+                    span 3
+                    p year experience
+                a.activity-item(href='#')
+                    img.activity-ico(src='/assets/img/male.png')
+                    span 15
+                    p complited projects
+                a.activity-item(href='#')
+                    img.activity-ico(src='/assets/img/male.png')
+                    span 10
+                    p happy clients
+                a.activity-item(href='#')
+                    img.activity-ico(src='/assets/img/male.png')
+                    span 10K
+                    p cups of coffee
 
 
 
